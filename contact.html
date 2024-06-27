@@ -19,14 +19,14 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:400,600" rel="stylesheet" />
 <script src="js/modernizr.js" type="text/javascript"></script>
 </head>
-<body class="amiri">
+<body class="contact-page lato">
 <div id="nav-wrapper"> 
   <!-- start main nav -->
   <nav id="main-nav">
     <ul class="clearfix">
-      <li> <a href="#" class="sub-nav-toggle selected">Demos</a>
+      <li> <a href="#" class="sub-nav-toggle">Demos</a>
         <ul class="sub-nav hidden">
-          <li> <a href="index.html" class="selected">Agency</a> </li>
+          <li> <a href="index.html">Agency</a> </li>
           <li> <a href="restaurant.html">Restaurant</a> </li>
           <li> <a href="fitness.html">Fitness</a> </li>
           <li> <a href="photography.html">Photography</a> </li>
@@ -46,7 +46,7 @@
           <li> <a href="job-offers.html">Job Offers</a> </li>
         </ul>
       </li>
-      <li> <a href="contact.html">Contact</a> </li>
+      <li> <a href="contact.html" class="selected">Contact</a> </li>
     </ul>
   </nav>
   <!-- end main nav --> 
@@ -77,111 +77,50 @@
     <div class="full-width intro">
       <div class="full-height not-completely-full">
         <div class="fixed">
-          <figure class="background-image3 parallax parallax-banner"></figure>
+          <div id="map" class="parallax parallax-banner"></div>
         </div>
         <div class="full-height-wrapper white-text">
           <div class="parent">
             <div class="bottom">
               <div class="container">
                 <div class="animatedblock delay2 animatedUp">
-                  <div class="col-lg-6 col-md-offset-1 col-md-7">
+                  <div class="col-md-7 col-md-offset-1">
                     <div class="banner-textblock">
-                      <p class="large">Belton Creative Group</p>
-                      <h1 class="header">We're a digital-forward agency, focused on brand building.</h1>
+                      <p class="large">Contact</p>
+                      <h1 class="header">Belton Creative Group<br />
+                        Neusser Str. 255<br />
+                        Köln</h1>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="overlay"></div>
+          <div class="overlay contact-map-overlay"></div>
         </div>
       </div>
     </div>
     <section class="white">
       <div class="container clearfix">
-        <div class="col-md-3 col-md-offset-1 col-sm-6">
-          <p class="large">We specialize in:</p>
-          <h4>Strategy & Insights</h4>
-          <h4>Digital</h4>
-          <h4>Art Direction</h4>
-          <div class="break"></div>
-        </div>
-        <div class="col-md-7 col-sm-6">
-          <p class="large">Passionate Coders. Innovative Designers. Genius Storytellers.</p>
-          <p class="large">We are known for our unparalleled use of technology and deliver unsurpassed designs, that we, and our clients, are very proud of. Together we create award-winning brand experiences. </p>
-          <p class="large">Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
-          <p><a href="#" title="" class="arrow">What We Do</a></p>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container clearfix">
-        <div class="col-lg-12 white-text centered extra-padding-bottom">
-          <h2 class="header">Recent Work</h2>
-        </div>
-      </div>
-      <div class="container clearfix">
-        <div id="container">
-          <div class="element clearfix col-sm-6 home travel"> <a href="case-study-1.html" data-title="Image Title" class="transition-link"> <img src="images/work-single-1.jpg" alt="" />
-            <div class="title-holder">
-              <h3>Just do it!</h3>
-              <p class="large">Nike</p>
+        <div class="col-md-7 col-md-offset-1 col-sm-6 extra-padding-right">
+          <form class="form-part" method="post" action="contact.php" name="contactform" id="contactform" autocomplete="off">
+            <input name="name" type="text" id="name" size="30" title="Name" />
+            <input name="email" type="text" id="email" size="30" title="Email" />
+            <textarea name="comments" cols="40" rows="3" id="comments" title="Tell us what you think!"></textarea>
+            <div class="input-wrapper clearfix"> <span id="message"></span>
+              <div class="clear"></div>
+              <input type="submit" class="button" value="Submit" id="submit" name="Submit" />
             </div>
-            <div class="overlay"></div>
-            </a> </div>
-          <div class="element clearfix col-sm-6 home travel"> <a href="case-study-2.html" data-title="Image Title" class="transition-link"> <img src="images/work-single-10.jpg" alt="" />
-            <div class="title-holder right">
-              <h3>Wireless AirPods</h3>
-              <p class="large">Apple</p>
-            </div>
-            <div class="overlay"></div>
-            </a> </div>
-          <div class="element clearfix col-sm-6 home travel"> <a href="case-study-1.html" data-title="Image Title" class="transition-link"> <img src="images/work-single-9.jpg" alt="" />
-            <div class="title-holder">
-              <h3>Magazine Cover</h3>
-              <p class="large">Inventory</p>
-            </div>
-            <div class="overlay"></div>
-            </a> </div>
-          <div class="element clearfix col-sm-6 home travel"> <a href="case-study-1.html" data-title="Image Title" class="transition-link"> <img src="images/work-single-7.jpg" alt="" />
-            <div class="title-holder right">
-              <h3>Seller Admin</h3>
-              <p class="large">Shopify</p>
-            </div>
-            <div class="overlay"></div>
-            </a> </div>
-        </div>
-      </div>
-      <div class="container clearfix">
-        <div class="col-lg-12 white-text centered">
-          <p><a href="portfolio.html" title="" class="arrow">View All</a></p>
-        </div>
-      </div>
-    </section>
-    <section class="white">
-      <div class="container clearfix no-header">
-        <div class="col-md-10 col-md-offset-1 centered">
-          <div class="client"><a href="#" title=""><img alt="" src="images/logos/logo01.png" /></a></div>
-          <div class="client"><a href="#" title=""><img alt="" src="images/logos/logo09.png" /></a></div>
-          <div class="client"><a href="#" title=""><img alt="" src="images/logos/logo07.png" /></a></div>
-          <div class="client"><a href="#" title=""><img alt="" src="images/logos/logo04.png" /></a></div>
-          <div class="client"><a href="#" title=""><img alt="" src="images/logos/logo08.png" /></a></div>
-          <div class="client"><a href="#" title=""><img alt="" src="images/logos/logo06.png" /></a></div>
-          <div class="clear"></div>
-          <div class="borderline"></div>
-          <div class="break"></div>
-        </div>
-      </div>
-      <div class="container clearfix">
-        <div class="col-md-2 col-md-offset-1">
-          <h2 class="header">Clients</h2>
-        </div>
-        <div class="col-md-5 col-sm-6">
-          <p class="large">Great things happen when building long-lasting relationships. By now, you are hopefully impressed and dying to work with us.</p>
+          </form>
         </div>
         <div class="col-md-3 col-sm-6">
-          <p class="alignright"><a href="#" title="" class="arrow">Contact Us</a></p>
+          <h2 class="header">Enquiries</h2>
+          <p>Visit us in Cologne or drop us a message. We'll get back to you as soon as possible. </p>
+          <div class="break"></div>
+          <p class="large">business@belton.com</p>
+          <p class="small below-text">New Business</p>
+          <p class="large">+49 (0)221 3644 800</p>
+          <p class="small below-text">phone</p>
         </div>
       </div>
     </section>
@@ -210,6 +149,7 @@
 <script src="js/preloader.js" type="text/javascript"></script> 
 <script src="js/bootstrap.min.js" type="text/javascript"></script> 
 <script src="js/jquery.fancybox.pack.js" type="text/javascript"></script> 
-<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI9Xh0ihB2u4E0-vnpXgtyjaDCHxrfgik&sensor=false" type="text/javascript"></script> 
+<script src="js/googlemaps.js" type="text/javascript"></script>
 </body>
 </html>
