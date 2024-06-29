@@ -320,7 +320,7 @@ body {
 	letter-spacing: 0;
 	line-height: 1.6;
 	margin-top: 15px;
-	padding-top: 20px; /* Add this line to move the p element down */
+	padding-bottom: 20px; /* Add this line to move the p element down */
 }
 
 .btn-action {
