@@ -307,7 +307,7 @@ body {
 	color: #FFFFFF;
 	color: #364655;
 	line-height: 1.2;
-	margin-top: 80px;
+	margin-top: 70px;
 	letter-spacing: 0;
 }
 
@@ -320,6 +320,7 @@ body {
 	letter-spacing: 0;
 	line-height: 1.6;
 	margin-top: 15px;
+	padding-top: 5px;
 	padding-bottom: 30px; /* Add this line to move the p element down */
 }
 
