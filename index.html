@@ -17,6 +17,23 @@
   <link rel="stylesheet" href="assets/css/ionicons.min.css"> <!-- Resource style -->
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    .lottie-player {
+        width: 720px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    /* 移动端样式 */
+    @media screen and (max-width: 768px) {
+        .lottie-player {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -58,7 +75,8 @@
           <div class="row text-center">
             <div class="col-md-12">
               <div class="hero-img wow fadeIn">
-                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="assets/Intro_lottie.json" background="transparent" speed="1" style="width: 720px; margin: 0 auto; display: block;" direction="1" playMode="normal" loop autoplay alt="home"></dotlottie-player>
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                <dotlottie-player class="lottie-player" src="assets/Intro_lottie.json"  background="transparent" speed="1" direction="1" playMode="normal" loop autoplay alt="home"></dotlottie-player>
               </div>
             </div>
             <div class="col-md-12">
