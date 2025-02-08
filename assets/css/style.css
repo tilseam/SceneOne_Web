@@ -662,8 +662,9 @@ body {
 
     .flex-split.with-bottom-img {
         padding: 100px 0 0 0;
-        position: relative; /* 添加相对定位 */
-    }    
+        position: relative;
+        /* 添加相对定位 */
+    }
 
     .flex-intro {
         margin-bottom: 50px;
@@ -680,23 +681,24 @@ body {
 
 
     .flex-split.with-bottom-img .flex-intro {
-        margin-bottom: 0px;
+        margin-bottom: 100px;
         /* 为底部图片预留空间，根据实际图片高度调整 */
     }
 
     .flex-split.with-bottom-img .bottom-image-wrapper {
         width: 100%;
         text-align: center;
-        margin-top: 0px; /* 添加适当的上边距 */
+        margin-top: 0px;
+        /* 添加适当的上边距 */
     }
-    
+
     .flex-split.with-bottom-img .bottom-image-wrapper img {
         max-width: 100%;
         height: auto;
         display: inline-block;
         vertical-align: bottom;
     }
-    
+
 
     .flex-intro p {
         font-size: 14px;
@@ -796,16 +798,16 @@ body {
     .features .image-wrapper {
         width: 100%;
         text-align: center;
-        margin-top: 0px; /* 添加适当的上边距 */
+        margin-top: 0px;
+        /* 添加适当的上边距 */
     }
-    
+
     .features .image-wrapper img {
-        max-width: 60%;
+        max-width: 100%;
         height: auto;
         display: inline-block;
         vertical-align: bottom;
     }
-
 
     .features-intro {
         margin-bottom: 50px;
