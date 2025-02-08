@@ -679,6 +679,18 @@ body {
         margin-bottom: 10px;
     }
 
+    .flex-split .image-wrapper {
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .flex-split .image-wrapper img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: bottom;
+    }
 
     .flex-split.with-bottom-img .flex-intro {
         margin-bottom: 100px;
@@ -710,6 +722,12 @@ body {
         margin: 0 auto;
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+
+    .flex-split .flex-intro p[style="text-align: justify;"] br {
+        content: "";
+        display: block;
+        margin-top: 0.7em;
     }
 
     .flex-inner {
@@ -833,6 +851,14 @@ body {
         margin-bottom: 15px;
     }
 
+    
+    /* Features section paragraph spacing */
+    .features .features-intro p[style="text-align: justify;"] br {
+        content: "";
+        display: block;
+        margin-top: 0.7em;
+    }
+ 
 
     .feature-list {
         margin: 30px 10px;
