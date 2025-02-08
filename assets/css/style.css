@@ -660,6 +660,11 @@ body {
         padding: 100px 0;
     }
 
+    .flex-split.with-bottom-img {
+        padding: 100px 0 0 0;
+        position: relative; /* 添加相对定位 */
+    }    
+
     .flex-intro {
         margin-bottom: 50px;
         text-align: center;
@@ -673,6 +678,26 @@ body {
         margin-bottom: 10px;
     }
 
+
+    .flex-split.with-bottom-img .flex-intro {
+        margin-bottom: 0px;
+        /* 为底部图片预留空间，根据实际图片高度调整 */
+    }
+
+    .flex-split.with-bottom-img .bottom-image-wrapper {
+        width: 100%;
+        text-align: center;
+        margin-top: 0px; /* 添加适当的上边距 */
+    }
+    
+    .flex-split.with-bottom-img .bottom-image-wrapper img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    
+
     .flex-intro p {
         font-size: 14px;
         font-weight: 500;
@@ -684,7 +709,6 @@ body {
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
 
     .flex-inner {
         margin: 50px 0;
@@ -1368,8 +1392,6 @@ body {
 
     .cta-sm {
         padding: 100px 0 100px 0;
-        background: rgba(30, 166, 154, 0.1);
-        background: #f8faff;
         background: #F6FAFD;
     }
 
@@ -1391,6 +1413,10 @@ body {
         color: #aeaeae;
         letter-spacing: 1px;
         margin-bottom: 15px;
+    }
+
+    .cta-sm.white-background {
+        background: white;
     }
 
     .form {
@@ -1518,9 +1544,12 @@ body {
 
     .footer-sm {
         padding: 30px 0;
-        background: rgba(30, 166, 154, 0.1);
         background: #F6FAFD;
         text-align: center;
+    }
+
+    .footer-sm.white-background {
+        background: white;
     }
 
     .footer-sm .col-md-4:nth-child(even) {
@@ -1598,7 +1627,6 @@ body {
     }
 
 
-
     /* -------------------------------------------------------
 ----------- Bact-to-Top Styling Starts Here --------------
 ---------------------------------------------------------*/
@@ -1618,6 +1646,10 @@ body {
         border-radius: 50%;
         display: table;
         box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    }
+
+    .bk-top.white-background {
+        background: white;
     }
 
     .bk-top-txt {
