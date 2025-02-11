@@ -225,6 +225,33 @@ body {
     position: relative;
 }
 
+.note-annotation {
+    font-size: 0.8rem !important;
+    /* 添加 !important 以确保优先级 */
+    color: #9999aa;
+    font-style: normal;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    padding-left: 16px;
+    border-left: 2px solid #eee;
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.note-annotation::before {
+    content: "*";
+    margin-right: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .note-annotation {
+        color: #888899;
+        border-left-color: #333;
+    }
+}
 
 /*------ Navbar Styling ------*/
 
@@ -716,6 +743,12 @@ body {
         vertical-align: bottom;
     }
 
+    /* 在较大屏幕上再使用较大的max-width */
+    @media only screen and (min-width: 768px) {
+        .flex-split .image-wrapper {
+            max-width: 700px;
+        }
+    }
 
     .flex-intro p {
         font-size: 14px;
@@ -836,6 +869,12 @@ body {
         margin: 0 auto;
     }
 
+    @media only screen and (min-width: 768px) {
+        .features .image-wrapper {
+            max-width: 700px;
+        }
+    }
+    
     .features-intro {
         margin-bottom: 50px;
     }
@@ -860,14 +899,20 @@ body {
         margin-bottom: 15px;
     }
 
-    
     /* Features section paragraph spacing */
     .features .features-intro p[style="text-align: justify;"] br {
         content: "";
         display: block;
         margin-top: 0.7em;
     }
- 
+
+    /* Features section paragraph spacing */
+    .features .features-intro p[style="text-align: justify;"] br {
+        content: "";
+        display: block;
+        margin-top: 0.7em;
+    }
+
 
     .feature-list {
         margin: 30px 10px;
