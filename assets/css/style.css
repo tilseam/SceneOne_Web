@@ -741,7 +741,7 @@ body {
     /* 在较大屏幕上再使用较大的max-width */
     @media only screen and (min-width: 768px) {
         .flex-split .image-wrapper {
-            max-width: 700px;
+            max-width: 400px;
         }
     }
 
@@ -855,13 +855,14 @@ body {
         margin-right: auto;
         padding-left: 15px;
         padding-right: 15px;
-    }
+      }
 
-    .features .image-wrapper img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
+      .features .image-wrapper img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          width: 100%;
     }
     
      @media only screen and (min-width: 768px) {
@@ -1010,8 +1011,6 @@ body {
         padding: 100px 0;
         background: #007AFF;
     }
-
-    .yd-stats .intro {}
 
     .yd-stats .intro h2 {
         font-size: 28px;
@@ -2021,3 +2020,4 @@ body {
         }
 
     }
+}
