@@ -63,7 +63,8 @@ jQuery(function ($) {
     pagination: false,
     touchDrag: true,
     mouseDrag: true,
-    smartSpeed: 300
+    smartSpeed: 300,
+    loop: true
   });
 
   // 处理轮播图触摸事件
