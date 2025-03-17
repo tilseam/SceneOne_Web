@@ -416,7 +416,10 @@
                         <li>Marking shots - free</li>
                         <li>Quicklog - in-app purchase</li>
                       </ul>
-                      <button class="btn-action">Get It</button>
+                      <div class="btn-group">
+                        <button class="btn-action btn-ios">Get iOS App</button>
+                        <button class="btn-android" onclick="downloadAndroidApp()">GET Android APP</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -426,6 +429,15 @@
         </div>
       </div>
       <!-- Array Pricing Ends -->
+
+      <script>
+        function downloadAndroidApp() {
+          const link = document.createElement('a');
+          link.href = 'Downloads/sceneone.apk';
+          link.download = 'SceneOne.apk';
+          link.click();
+        }
+      </script>
 
       <!-- CTA Signup Section -->
       <div id="signup" class="cta-sm">
@@ -437,12 +449,12 @@
               <form id="chimp-form" class="subscribe-form wow zoomIn" action="assets/php/subscribe.php" method="post"
                 accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
                 <!-- <input class="mail" id="chimp-email" type="email" name="email" placeholder="Enter your email address" autocomplete="off"> -->
-                <input class="submit-button" type="submit" value="Download Test Version">
+                <input class="submit-button" type="submit" value="Download Test Version (Coming Soon)">
               </form>
               <div id="response"></div>
             </div>
             <div class="form-note">
-              <p>Try our demo version - experience the workflow with limited features.</p>
+              <p>The trial version is temporarily unavailable for maintenance and updates. Check back later.</p>
             </div>
           </div>
         </div>

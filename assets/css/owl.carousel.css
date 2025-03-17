@@ -60,6 +60,7 @@
     min-height: 1px;
     float: left;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     -webkit-touch-callout: none
 }
 

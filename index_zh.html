@@ -1,492 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>SceneOne</title>
-    <link rel="icon" href="assets/icons/favicon.png" type="image/png" sizes="16x16">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Intro of SceneOne APP">
-    <meta name="keywords" content="SceneOne, SceneOne on macOS, SceneOne iOS">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Resource style -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.css">
-    <link rel="stylesheet" href="assets/css/ionicons.min.css"> <!-- Resource style -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <style>
-        .lottie-player {
-            width: 720px;
-            margin: 0 auto;
-            display: block;
-        }
-        
-        /* 移动端样式 */
-        @media screen and (max-width: 768px) {
-            .lottie-player {
-                width: 100%;
-                max-width: 400px;
-                margin: 0 auto;
-                display: block;
+
+<head>
+  <meta charset="utf-8">
+  <title>SceneOne</title>
+  <link rel="icon" href="assets/icons/favicon.png" type="image/png" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Intro of SceneOne APP">
+  <meta name="keywords" content="SceneOne, SceneOne on macOS, SceneOne iOS">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/animate.css"> <!-- Resource style -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.css">
+  <link rel="stylesheet" href="assets/css/ionicons.min.css"> <!-- Resource style -->
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <style>
+    .lottie-player {
+      width: 720px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    /* 移动端样式 */
+    @media screen and (max-width: 768px) {
+      .lottie-player {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container container-s">
+        <a class="navbar-brand" href="#">SceneOne</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto navbar-right">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#products">关于产品</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">特点</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reviews">探索</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">下载</a></li>
+            <!-- Language Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Language
+              </a>
+              <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="index_zh.html" data-lang="简体中文">简体中文</a>
+                <a class="dropdown-item" href="index.html" data-lang="English">English</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><!-- Navbar End -->
+
+
+    <div id="main" class="main">
+      <div class="home"><!-- Hero Section-->
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-12">
+              <div class="hero-img wow fadeIn">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                  type="module"></script>
+                <dotlottie-player class="lottie-player" src="assets/Intro_lottie_i.json" background="transparent"
+                  speed="1" direction="1" playMode="normal" loop autoplay alt="home"></dotlottie-player>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="hero-content wow fadeIn">
+                <h1>SceneOne</h1>
+                <p>少花时间，多花心思</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- Hero End -->
+
+
+      <div id="products" class="features wow fadeInDown">
+        <div class="container-m">
+          <div class="row text-center">
+            <div class="col-md-12">
+              <div class="features-intro">
+                <h2>为什么您需要这个APP?</h2>
+                <p>SceneOne —— 重新思考“拍摄计划”， <br>
+                  让您的创作、排版、分享、追踪，从未如此轻松。</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="feature-list">
+                <div class="card-icon">
+                  <div class="card-img">
+                    <img src="assets/icons/Index_Storyboard.png" width="35" alt="Feature">
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h3>故事板</h3>
+                  <p>“拖拖拉拉”，也能制作专业的故事板</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="feature-list">
+                <div class="card-icon">
+                  <div class="card-img">
+                    <img src="assets/icons/Index_Rundown.png" width="35" alt="Feature">
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h3>时间表</h3>
+                  <p>时间的魔法：批量调整，智能重排</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="feature-list">
+                <div class="card-icon">
+                  <div class="card-img">
+                    <img src="assets/icons/Index_Callsheet.png" width="35" alt="Feature">
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h3>通告单</h3>
+                  <p>定制一次模版，改改就能发布通告单</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="feature-list">
+                <div class="card-icon">
+                  <div class="card-img">
+                    <img src="assets/icons/Index_Presentation.png" width="35" alt="Feature">
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h3>演示</h3>
+                  <p>拍摄计划秒变演示文稿！</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="feature-list">
+                <div class="card-icon">
+                  <div class="card-img">
+                    <img src="assets/icons/Index_Export.png" width="35" alt="Feature">
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h3>导出</h3>
+                  <p>PDF、文档、表格，花式导出</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="feature-list">
+                <div class="card-icon">
+                  <div class="card-img">
+                    <img src="assets/icons/Index_Mobile.png" width="35" alt="Feature">
+                  </div>
+                </div>
+                <div class="card-text">
+                  <h3>手机版</h3>
+                  <p>像浏览相册一样跟进拍摄进度</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+      <div id="features" class="flex-split">
+        <div class="container-s">
+          <div class="flex-intro align-center wow fadeIn">
+            <h2>一个更灵活的创作工具</h2>
+            <p> 您应该专注于创意，而非排版。</p>
+          </div>
+          <div class="flex-inner align-center">
+            <div class="f-image wow">
+              <img class="img-fluid" src="assets/images/feature.webp" alt="Feature">
+            </div>
+            <div class="f-text">
+              <div class="left-content">
+                <h2>如Notion那般丝滑</h2>
+                <p> 开一个图像软件，就为了裁切图片？<br>
+                  故事板和时间表，分两份表格修改？<br>
+                  调整拍摄日程，整个表格都得重排？<br>
+                  换个演员名字，整个文档找一遍？<br>
+                  ……<br>
+                  忘记这些繁琐操作吧！
+                </p>
+                <a href="desktop_zh.html">了解更多</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-inner flex-inverted align-center">
+            <div class="f-image f-image-inverted">
+              <img class="img-fluid" src="assets/images/feature2.webp" alt="Feature">
+            </div>
+            <div class="f-text">
+              <div class="left-content">
+                <h2>如日程APP一样顺手</h2>
+                <p>
+                  像刷 Twitter 那样简洁；<br>
+                  像日程管理那样便捷； <br>
+                  场记文件名明明可以自动推算，<br>
+                  它就应该更简单。</p>
+                <a href="mobile_zh.html">了解更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Counter Section -->
+      <div class="yd-stats wow fadeIn">
+        <div class="container-s">
+          <div class="row text-center">
+            <div class="col-sm-12">
+              <div class="intro">
+                <h2>一个更高效的创作流程</h2>
+                <p>来看看我们的流程相比传统流程:</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="counter-up">
+                <h3><span class="counter">40</span>%</h3>
+                <div class="counter-text">
+                  <h2>效率将大幅提升</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="counter-up">
+                <h3><span class="counter">33</span>%</h3>
+                <div class="counter-text">
+                  <h2>提供更多的思考时间</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="counter-up">
+                <h3><span class="counter">50</span>%</h3>
+                <div class="counter-text">
+                  <h2>节省您的APP开销</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="yd-link">
+                <a href="workflow_zh.html">了解更多</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- Counter Section Ends -->
+
+      <div class="ar-ft-single wow fadeIn">
+        <div class="container-m">
+          <div class="ar-feature">
+            <div class="ar-list">
+              <ul>
+                <li>
+                  <div class="ar-icon">
+                    <img src="assets/icons/index_linitation.png" width="30" alt="Icon">
+                  </div>
+                  <div class="ar-text">
+                    <h3><a href="limitations_zh.html">适用范围</a></h3>
+                    <p>这不是全能软件，更多功能正在开发中。</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="ar-icon">
+                    <img src="assets/icons/index_feedback1.png" width="30" alt="Icon">
+                  </div>
+                  <div class="ar-text">
+                    <h3><a href="https://github.com/tilseam/SceneOne-Feedback/issues" target="_blank">软件反馈 (国际用户)</a>
+                    </h3>
+                    <p>我们通过 GitHub® 收集用户反馈. 报告 Bug 或者告诉我您的想法。</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="ar-icon">
+                    <img src="assets/icons/index_feedback2.png" width="30" alt="Icon">
+                  </div>
+                  <div class="ar-text">
+                    <h3><a href="https://txc.qq.com/products/659021/" target="_blank">软件反馈 (国内用户)</a></h3>
+                    <p>我们通过 腾讯兔小巢® 收集用户反馈. 报告 Bug 或者告诉我您的想法。</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="ar-image">
+              <img class="ar-img img-fluid" src="assets/images/feature-2.webp" alt="Hero Image">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="reviews" class="yd-reviews"><!-- Array Reviews -->
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-sm-12 col-lg-8 offset-lg-2">
+              <div class="intro wow fadeIn" data-wow-delay="0.1s">
+                <h1>探索 SceneOne </h1>
+                <p>多渠道深入了解 SceneOne
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
+              <div class="review-cards owl-carousel owl-theme wow fadeInDown" data-wow-delay="0.2s">
+                <div class="card-single">
+                  <div class="review-text">
+                    <h1> 《又要写那该死的拍摄计划了》 。
+                    </h1>
+                  </div>
+                  <div class="review-attribution">
+                    <div class="review-img">
+                      <img class="img-fluid rounded-circle" src="assets/icons/review-1.png" alt="Review">
+                    </div>
+
+                    <h2> SceneOne 宣传片 </h2>
+                    <h6> 官方视频 </h6>
+                  </div>
+                </div>
+                <div class="card-single">
+                  <div class="review-text">
+                    <h1>了解 SceneOne 的基本操作，快捷操作和自定义设置。
+                    </h1>
+                  </div>
+                  <div class="review-attribution">
+                    <div class="review-img">
+                      <img class="img-fluid rounded-circle" src="assets/icons/review-2.png" alt="Review">
+                    </div>
+
+                    <h2> SceneOne 教程 </h2>
+                    <h6> 官方视频 </h6>
+                    <!-- <a href="#">Vestor Corp</a> -->
+                  </div>
+                </div>
+                <div class="card-single">
+                  <div class="review-text">
+                    <h1>学习如何 SceneOne 更高效，发掘一些有趣的小技巧。
+                    </h1>
+                  </div>
+                  <div class="review-attribution">
+                    <div class="review-img">
+                      <img class="img-fluid rounded-circle" src="assets/icons/review-3.png" alt="Review">
+                    </div>
+
+                    <h2> SceneOne Tips </h2>
+                    <h6> 官方视频 </h6>
+                    <!-- <a href="#">Betabet Inc</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Array Reviews Ends -->
+
+      <div class="modal-overlay" id="videoModal">
+        <div class="modal-content">
+          <button class="close-button" id="closeBtn">&times;</button>
+          <div class="video-wrapper">
+          
+            <iframe id="bili-player"
+              src="https://player.bilibili.com/player.html?aid=114176454296655&bvid=BV1gMQzYaEKZ&cid=28910030540&page=1&high_quality=1&autoplay=0"
+              scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const playLink = document.getElementById('playVideoLink');
+          const modal = document.getElementById('videoModal');
+          const closeBtn = document.getElementById('closeBtn');
+          const biliPlayer = document.getElementById('bili-player');
+          
+          // 设置视频比例函数
+          function setVideoHeight() {
+            biliPlayer.style.height = biliPlayer.offsetWidth * 0.5625 + 'px';
+          }
+          
+          // 页面加载和窗口大小改变时设置视频高度
+          window.addEventListener('resize', setVideoHeight);
+          setVideoHeight();
+          
+          // 打开弹窗（点击链接）
+          playLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+            let src = biliPlayer.src;
+            if (src.indexOf('autoplay=0') !== -1) {
+              biliPlayer.src = src.replace('autoplay=0', 'autoplay=1');
             }
+            setVideoHeight();
+          });
+          
+          // 关闭弹窗
+          closeBtn.addEventListener('click', function() {
+            let src = biliPlayer.src;
+            biliPlayer.src = src.replace('autoplay=1', 'autoplay=0');
+            modal.style.display = 'none';
+          });
+          
+          // 点击背景关闭弹窗
+          modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+              let src = biliPlayer.src;
+              biliPlayer.src = src.replace('autoplay=1', 'autoplay=0');
+              modal.style.display = 'none';
+            }
+          });
+        });
+      </script>
+
+      <!-- Array Pricing Section -->
+      <div id="pricing" class="pricing-section text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="pricing-intro wow fadeInDown">
+                <h1>下载</h1>
+                <p>
+                  桌面版本一次性收费 (除非大版本更新，目前并无计划)， <br class="hidden-xs"> 手机版本基础功能免费，仅 Quicklog 功能需要内购开启。
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 offset-lg-2 col-md-6">
+                  <div class="table-left wow fadeInDown">
+                    <div class="pricing-details">
+                      <h2>桌面版本</h2>
+                      <img src="assets/icons/Index_desktopDownload.png" width="60" alt="Icon">
+
+                      <span>¥88.00</span>
+                      <ul>
+                        <li>支持 MacOS 11.0 以上系统</li>
+                        <li>支持 Silicon 芯片电脑</li>
+                        <li>不支持 Windows </li>
+                      </ul>
+                      <button class="btn-action">获取</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="table-right wow fadeInDown">
+                    <div class="pricing-details">
+                      <h2>手机版本</h2>
+                      <img src="assets/icons/Index_mobileDownload.png" width="60" alt="Icon">
+                      <span>免费!</span>
+                      <ul>
+                        <li>浏览、标记拍摄计划 - 免费</li>
+                        <li>Quicklog - 需要内购</li>
+                        <li>支持iOS，Android(测试)</li>
+                      </ul>
+                      <div class="btn-group">
+                        <button class="btn-action btn-ios">获取iOS版本</button>
+                        <button class="btn-android" onclick="downloadAndroidApp()">获取Android版本</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Array Pricing Ends -->
+
+      <script>
+        function downloadAndroidApp() {
+          const link = document.createElement('a');
+          link.href = 'Downloads/sceneone.apk';
+          link.download = 'SceneOne.apk';
+          link.click();
         }
-    </style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- Navbar Section -->
-      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-        <div class="container container-s">
-          <a class="navbar-brand" href="#">SceneOne</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto navbar-right">
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#products">关于产品</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">特点</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reviews">探索</a></li>
-              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">下载</a></li>
-              <!-- Language Dropdown -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Language
-                </a>
-                <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                  <a class="dropdown-item" href="index_zh.html" data-lang="简体中文">简体中文</a>
-                  <a class="dropdown-item" href="index.html" data-lang="English">English</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav><!-- Navbar End -->
+      </script>
 
-
-      <div id="main" class="main">
-        <div class="home"><!-- Hero Section-->
-          <div class="container">
-            <div class="row text-center">
-              <div class="col-md-12">
-                <div class="hero-img wow fadeIn">
-                  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                  <dotlottie-player class="lottie-player" src="assets/Intro_lottie_i.json"  background="transparent" speed="1" direction="1" playMode="normal" loop autoplay alt="home"></dotlottie-player>
-                </div>
-              </div>
-             
-              <div class="col-md-12">
-                <div class="hero-content wow fadeIn">
-                  <h1>SceneOne</h1>
-                  <p>少花时间，多花心思</p>
-                </div>
-              </div>
+      <!-- CTA Signup Section -->
+      <div id=" signup" class="cta-sm">
+        <div class="container-m text-center">
+          <div class="cta-content">
+            <h4>试用 SceneOne</h4>
+            <h1>助力广大视频工作者实现梦想。</h1>
+            <div class="form wow fadeIn" data-wow-delay="0.2s">
+              <form id="chimp-form" class="subscribe-form wow zoomIn" action="assets/php/subscribe.php" method="post"
+                accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+                <!-- <input class="mail" id="chimp-email" type="email" name="email" placeholder="Enter your email address" autocomplete="off"> -->
+                <input class="submit-button" type="submit" value="下载试用版本(敬请期待)">
+              </form>
+              <div id="response"></div>
             </div>
-          </div>
-        </div><!-- Hero End -->
-
-
-        <div id="products" class="features wow fadeInDown">
-          <div class="container-m">
-            <div class="row text-center">
-              <div class="col-md-12">
-                <div class="features-intro">
-                  <h2>为什么您需要这个APP?</h2>
-                  <p>SceneOne —— 重新思考“拍摄计划”， <br>
-                    让您的创作、排版、分享、追踪，从未如此轻松。</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="feature-list">
-                  <div class="card-icon">
-                    <div class="card-img">
-                      <img src="assets/icons/Index_Storyboard.png" width="35" alt="Feature">
-                    </div>
-                  </div>
-                  <div class="card-text">
-                    <h3>故事板</h3>
-                    <p>“拖拖拉拉”，也能制作专业的故事板</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="feature-list">
-                  <div class="card-icon">
-                    <div class="card-img">
-                      <img src="assets/icons/Index_Rundown.png" width="35" alt="Feature">
-                    </div>
-                  </div>
-                  <div class="card-text">
-                    <h3>时间表</h3>
-                    <p>时间的魔法：批量调整，智能重排</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="feature-list">
-                  <div class="card-icon">
-                    <div class="card-img">
-                      <img src="assets/icons/Index_Callsheet.png" width="35" alt="Feature">
-                    </div>
-                  </div>
-                  <div class="card-text">
-                    <h3>通告单</h3>
-                    <p>定制一次模版，改改就能发布通告单</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="feature-list">
-                  <div class="card-icon">
-                    <div class="card-img">
-                      <img src="assets/icons/Index_Presentation.png" width="35" alt="Feature">
-                    </div>
-                  </div>
-                  <div class="card-text">
-                    <h3>演示</h3>
-                    <p>拍摄计划秒变演示文稿！</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="feature-list">
-                  <div class="card-icon">
-                    <div class="card-img">
-                      <img src="assets/icons/Index_Export.png" width="35" alt="Feature">
-                    </div>
-                  </div>
-                  <div class="card-text">
-                    <h3>导出</h3>
-                    <p>PDF、文档、表格，花式导出</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="feature-list">
-                  <div class="card-icon">
-                    <div class="card-img">
-                      <img src="assets/icons/Index_Mobile.png" width="35" alt="Feature">
-                    </div>
-                  </div>
-                  <div class="card-text">
-                    <h3>手机版</h3>
-                    <p>像浏览相册一样跟进拍摄进度</p>
-                  </div>
-                </div>
-              </div>
+            <div class="form-note">
+              <p>试用版本临时下架进行维护和更新，稍后提供。</p>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Features Section -->
-        <div id="features" class="flex-split">
-           <div class="container-s">
-             <div class="flex-intro align-center wow fadeIn">
-               <h2>一个更灵活的创作工具</h2>
-               <p> 您应该专注于创意，而非排版。</p>
-             </div>
-             <div class="flex-inner align-center">
-                 <div class="f-image wow">
-                   <img class="img-fluid" src="assets/images/feature.webp" alt="Feature">
-                 </div>
-                 <div class="f-text">
-                   <div class="left-content">
-                     <h2>如Notion那般丝滑</h2>
-                     <p> 开一个图像软件，就为了裁切图片？<br>
-                      故事板和时间表，分两份表格修改？<br>
-                      调整拍摄日程，整个表格都得重排？<br>
-                      换个演员名字，整个文档找一遍？<br>
-                      ……<br>
-                      忘记这些繁琐操作吧！
-                    </p>
-                     <a href="desktop_zh.html" >了解更多</a>
-                   </div>
-                 </div>
-             </div>
-
-             <div class="flex-inner flex-inverted align-center">
-               <div class="f-image f-image-inverted">
-                 <img class="img-fluid" src="assets/images/feature2.webp" alt="Feature">
-               </div>
-               <div class="f-text">
-                 <div class="left-content">
-                   <h2>如日程APP一样顺手</h2>
-                   <p> 
-                    像刷 Twitter 那样简洁；<br>
-                    像日程管理那样便捷； <br>
-                    场记文件名明明可以自动推算，<br>
-                    它就应该更简单。</p>
-                   <a href="mobile_zh.html">了解更多</a>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-
-
-         <!-- Counter Section -->
-         <div class="yd-stats wow fadeIn">
-           <div class="container-s">
-             <div class="row text-center">
-               <div class="col-sm-12">
-                 <div class="intro">
-                   <h2>一个更高效的创作流程</h2>
-                   <p>来看看我们的流程相比传统流程:</p>
-                 </div>
-               </div>
-               <div class="col-sm-4">
-                 <div class="counter-up">
-                    <h3><span class="counter">40</span>%</h3>
-                   <div class="counter-text">
-                     <h2>效率将大幅提升</h2>
-                   </div>
-                 </div>
-               </div>
-               <div class="col-sm-4">
-                 <div class="counter-up">
-                    <h3><span class="counter">33</span>%</h3>
-                   <div class="counter-text">
-                     <h2>提供更多的思考时间</h2>
-                   </div>
-                 </div>
-               </div>
-               <div class="col-sm-4">
-                 <div class="counter-up">
-                    <h3><span class="counter">50</span>%</h3>
-                   <div class="counter-text">
-                     <h2>节省您的APP开销</h2>
-                   </div>
-                 </div>
-               </div>
-               <div class="col-md-12">
-                 <div class="yd-link">
-                   <a href="workflow_zh.html">了解更多</a>
-                 </div>
-               </div>
-
-             </div>
-           </div>
-         </div><!-- Counter Section Ends -->
-
-         <div class="ar-ft-single wow fadeIn">
-          <div class="container-m">
-            <div class="ar-feature">
-              <div class="ar-list">
-                <ul>
-                  <li>
-                    <div class="ar-icon">
-                      <img src="assets/icons/index_linitation.png" width="30" alt="Icon">
-                    </div>
-                    <div class="ar-text">
-                      <h3><a href="limitations_zh.html">适用范围</a></h3>
-                      <p>这不是全能软件，更多功能正在开发中。</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="ar-icon">
-                      <img src="assets/icons/index_feedback1.png" width="30" alt="Icon">
-                    </div>
-                    <div class="ar-text">
-                      <h3><a href="https://github.com/tilseam/SceneOne-Feedback/issues" target="_blank">软件反馈 (国际用户)</a></h3>
-                      <p>我们通过 GitHub® 收集用户反馈. 报告 Bug 或者告诉我您的想法。</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="ar-icon">
-                      <img src="assets/icons/index_feedback2.png" width="30" alt="Icon">
-                    </div>
-                    <div class="ar-text">
-                      <h3><a href="https://txc.qq.com/products/659021/" target="_blank">软件反馈 (国内用户)</a></h3>
-                      <p>我们通过 腾讯兔小巢® 收集用户反馈. 报告 Bug 或者告诉我您的想法。</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="ar-image">
-                <img class="ar-img img-fluid" src="assets/images/feature-2.webp" alt="Hero Image">
-              </div>
+      <!-- Array Footer Section -->
+      <div class="footer-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <a class="footer-logo" href="#">SceneOne</a>
+            </div>
+            <div class="col-md-4">
+              <h6>&copy; Tilseam 开发于 2024</h6>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Bilibili</a></li>
+              </ul>
             </div>
           </div>
         </div>
-
-         <div id="reviews" class="yd-reviews"><!-- Array Reviews -->
-           <div class="container">
-             <div class="row text-center">
-               <div class="col-sm-12 col-lg-8 offset-lg-2">
-                 <div class="intro wow fadeIn" data-wow-delay="0.1s" >
-                   <h1>探索 SceneOne </h1>
-                   <p>多渠道深入了解 SceneOne
-                   </p>
-                 </div>
-               </div>
-
-               <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
-                 <div class="review-cards owl-carousel owl-theme wow fadeInDown" data-wow-delay="0.2s">
-                   <div class="card-single">
-                     <div class="review-text">
-                       <h1> 《又要写那该死的拍摄计划了》 。
-                       </h1>
-                     </div>
-                     <div class="review-attribution">
-                       <div class="review-img">
-                         <img class="img-fluid rounded-circle" src="assets/icons/review-1.png" alt="Review">
-                       </div>
-                       
-                       <h2> SceneOne 宣传片 </h2>
-                       <h6> 官方视频 </h6>
-                       <!-- <a href="#">Dropboxes Inc</a> -->
-                     </div>
-                   </div>
-                   <div class="card-single">
-                     <div class="review-text">
-                       <h1>了解 SceneOne 的基本操作，快捷操作和自定义设置。
-                       </h1>
-                     </div>
-                     <div class="review-attribution">
-                       <div class="review-img">
-                         <img class="img-fluid rounded-circle" src="assets/icons/review-2.png" alt="Review">
-                       </div>
-                       
-                       <h2> SceneOne 教程 </h2>
-                       <h6> 官方视频 </h6>
-                       <!-- <a href="#">Vestor Corp</a> -->
-                     </div>
-                   </div>
-                   <div class="card-single">
-                     <div class="review-text">
-                       <h1>学习如何 SceneOne 更高效，发掘一些有趣的小技巧。
-                       </h1>
-                     </div>
-                     <div class="review-attribution">
-                       <div class="review-img">
-                         <img class="img-fluid rounded-circle" src="assets/icons/review-3.png" alt="Review">
-                       </div>
-                      
-                       <h2> SceneOne Tips </h2>
-                       <h6> 官方视频 </h6>
-                       <!-- <a href="#">Betabet Inc</a> -->
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-         <!-- Array Reviews Ends -->
+      </div>
 
 
-        <!-- Array Pricing Section -->
-        <div id="pricing" class="pricing-section text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="pricing-intro wow fadeInDown">
-                  <h1>下载</h1>
-                  <p>
-                    桌面版本一次性收费 (除非大版本更新，目前并无计划)，  <br class="hidden-xs"> 手机版本基础功能免费，仅 Quicklog 功能需要内购开启。
-                </div>
-                <div class="row">
-                  <div class="col-lg-4 offset-lg-2 col-md-6">
-                   <div class="table-left wow fadeInDown">
-                     <div class="pricing-details">
-                       <h2>桌面版本</h2>
-                       <img src="assets/icons/Index_desktopDownload.png" width="60" alt="Icon">
-
-                       <span>¥88.00</span>
-                          <ul>
-                           <li>支持 MacOS 11.0 以上系统</li>
-                           <li>支持 Silicon 芯片电脑</li>
-                           <li>不支持 Windows </li>
-                           </ul>
-                         <button class="btn-action">获取</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="table-right wow fadeInDown">
-                      <div class="pricing-details">
-                         <h2>手机版本</h2>
-                         <img src="assets/icons/Index_mobileDownload.png" width="60" alt="Icon">
-                         <span>免费!</span>
-                         <ul>
-                           <li>浏览、标记拍摄计划 - 免费</li>
-                           <li>Quicklog - 需要内购</li>
-                           <li>支持iOS，Android(测试)</li>
-                         </ul>
-                         <button class="btn-action">获取</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- Scroll To Top -->
+      <div id="back-top" class="bk-top">
+        <div class="bk-top-txt">
+          <a class="back-to-top js-scroll-trigger" href="#main">top</a>
         </div>
-        <!-- Array Pricing Ends -->
+      </div>
+      <!-- Scroll To Top Ends-->
 
-        <!-- CTA Signup Section -->
-        <div id="signup" class="cta-sm">
-          <div class="container-m text-center">
-            <div class="cta-content">
-               <h4>试用 SceneOne</h4>
-               <h1>助力广大视频工作者实现梦想。</h1>
-               <div class="form wow fadeIn" data-wow-delay="0.2s">
-                <form id="chimp-form" class="subscribe-form wow zoomIn" action="assets/php/subscribe.php" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
-                  <!-- <input class="mail" id="chimp-email" type="email" name="email" placeholder="Enter your email address" autocomplete="off"> -->
-                  <input class="submit-button" type="submit" value="下载试用版本">
-                </form>
-                <div id="response"></div>
-              </div>
-              <div class="form-note">
-                <p>将提供功能受限的试用版本，供您体验.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Array Footer Section -->
-        <div class="footer-sm">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <a class="footer-logo" href="#">SceneOne</a>
-              </div>
-              <div class="col-md-4">
-                <h6>&copy; Tilseam 开发于 2024</h6>
-              </div>
-              <div class="col-md-4">
-                <ul>
-                  <li><a href="#">Github</a></li>
-                  <li><a href="#">Youtube</a></li>
-                  <li><a href="#">Bilibili</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div> <!-- Main -->
+  </div><!-- Wrapper -->
 
 
-       <!-- Scroll To Top -->
-        <div id="back-top" class="bk-top">
-          <div class="bk-top-txt">
-             <a class="back-to-top js-scroll-trigger" href="#main">top</a>
-          </div>
-        </div>
-       <!-- Scroll To Top Ends-->
+  <!-- Jquery and Js Plugins -->
+  <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="assets/js/plugins.js"></script>
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+  <script type="text/javascript" src="assets/js/videoplay.js"></script>
+</body>
 
-      </div> <!-- Main -->
-    </div><!-- Wrapper -->
-
-
-    <!-- Jquery and Js Plugins -->
-    <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins.js"></script>
-    <script type="text/javascript" src="assets/js/custom.js"></script>
-  </body>
 </html>
