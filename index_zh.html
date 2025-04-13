@@ -395,51 +395,6 @@
         </div>
       </div>
 
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const playLink = document.getElementById('playVideoLink');
-          const modal = document.getElementById('videoModal');
-          const closeBtn = document.getElementById('closeBtn');
-          const biliPlayer = document.getElementById('bili-player');
-          
-          // 设置视频比例函数
-          function setVideoHeight() {
-            biliPlayer.style.height = biliPlayer.offsetWidth * 0.5625 + 'px';
-          }
-          
-          // 页面加载和窗口大小改变时设置视频高度
-          window.addEventListener('resize', setVideoHeight);
-          setVideoHeight();
-          
-          // 打开弹窗（点击链接）
-          playLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            modal.style.display = 'flex';
-            let src = biliPlayer.src;
-            if (src.indexOf('autoplay=0') !== -1) {
-              biliPlayer.src = src.replace('autoplay=0', 'autoplay=1');
-            }
-            setVideoHeight();
-          });
-          
-          // 关闭弹窗
-          closeBtn.addEventListener('click', function() {
-            let src = biliPlayer.src;
-            biliPlayer.src = src.replace('autoplay=1', 'autoplay=0');
-            modal.style.display = 'none';
-          });
-          
-          // 点击背景关闭弹窗
-          modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-              let src = biliPlayer.src;
-              biliPlayer.src = src.replace('autoplay=1', 'autoplay=0');
-              modal.style.display = 'none';
-            }
-          });
-        });
-      </script>
-
       <!-- Array Pricing Section -->
       <div id="pricing" class="pricing-section text-center">
         <div class="container">
@@ -464,7 +419,7 @@
                         <li>支持 Silicon 芯片电脑</li>
                         <li>不支持 Windows </li>
                       </ul>
-                      <a href="https://apps.apple.com/cn/app/sceneone/id6738619748?mt=12 " target="_blank" alt="Download">
+                      <a href="https://apps.apple.com/cn/app/sceneone/id6738619748" target="_blank" alt="Download">
                       <button class="btn-action">获取</button>
                       </a>
                     </div>
@@ -541,7 +496,8 @@
             <div class="col-md-4">
               <ul>
                 <li><a href="contactme_zh.html">联系支持</a></li>
-                <li><a href="#">Youtube</a></li>
+                <li><a href="https://www.youtube.com/@sceneone-app" 
+                  target="_blank">Youtube</a></li>
                  <li><a href="https://space.bilibili.com/3546720791169733" target="_blank">Bilibili</a></li>
               </ul>
             </div>

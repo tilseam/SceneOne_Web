@@ -19,21 +19,21 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <style>
     .lottie-player {
-        width: 720px;
-        margin: 0 auto;
-        display: block;
+      width: 720px;
+      margin: 0 auto;
+      display: block;
     }
-    
+
     /* 移动端样式 */
     @media screen and (max-width: 768px) {
-        .lottie-player {
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto;
-            display: block;
-        }
+      .lottie-player {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+      }
     }
-</style>
+  </style>
 </head>
 
 <body>
@@ -75,8 +75,10 @@
           <div class="row text-center">
             <div class="col-md-12">
               <div class="hero-img wow fadeIn">
-                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                <dotlottie-player class="lottie-player" src="assets/Intro_lottie_i.json"  background="transparent" speed="1" direction="1" playMode="normal" loop autoplay alt="home"></dotlottie-player>
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                  type="module"></script>
+                <dotlottie-player class="lottie-player" src="assets/Intro_lottie_i.json" background="transparent"
+                  speed="1" direction="1" playMode="normal" loop autoplay alt="home"></dotlottie-player>
               </div>
             </div>
             <div class="col-md-12">
@@ -196,7 +198,8 @@
             <div class="f-text">
               <div class="left-content">
                 <h2>Anytime</h2>
-                <p> Launch an editor just to crop photos? Sort scenes and schedule in separate tables? Rearrange the entire sheet to change one schedule? ... <br>
+                <p> Launch an editor just to crop photos? Sort scenes and schedule in separate tables? Rearrange the
+                  entire sheet to change one schedule? ... <br>
                   Leave all these tedious tasks behind!</p>
                 <a href="desktop.html">More...</a>
               </div>
@@ -331,12 +334,11 @@
                   </div>
                   <div class="review-attribution">
                     <div class="review-img">
-                      <img class="img-fluid rounded-circle" src="assets/icons/review-1.png" alt="Review">
+                      <img class="img-fluid rounded-circle" src="assets/icons/review-4.png" alt="Review">
                     </div>
 
                     <h2> SceneOne Promo </h2>
                     <h6> Official Video </h6>
-                    <!-- <a href="#">Dropboxes Inc</a> -->
                   </div>
                 </div>
                 <div class="card-single">
@@ -376,6 +378,20 @@
       </div>
       <!-- Array Reviews Ends -->
 
+      <!-- 弹窗容器 -->
+      <div class="modal-overlay" id="videoModal">
+        <div class="modal-content">
+          <button class="close-button" id="closeBtn">&times;</button>
+          <div class="video-wrapper">
+          
+            <iframe id="bili-player" width="100%" style="border:none;" 
+            src="https://www.youtube.com/embed/M0e9yhfHuq4?autoplay=0&rel=0&enablejsapi=1"
+            allow="autoplay; encrypted-media" allowfullscreen>
+          </iframe>
+          </div>
+        </div>
+      </div>
+
       <!-- Array Pricing Section -->
       <div id="pricing" class="pricing-section text-center">
         <div class="container">
@@ -401,7 +417,7 @@
                         <li>Supports Silicon chip</li>
                         <li>Windows version is not available</li>
                       </ul>
-                      <a href="https://apps.apple.com/cn/app/sceneone/id6738619748?mt=12 " target="_blank" alt="Download">
+                      <a href="https://apps.apple.com/cn/app/sceneone/id6738619748 " target="_blank" alt="Download">
                         <button class="btn-action">Get It</button>
                       </a>
                     </div>
@@ -477,7 +493,8 @@
             <div class="col-md-4">
               <ul>
                 <li><a href="contactme.html">Contact</a></li>
-                <li><a href="#">Youtube</a></li>
+                <li><a href="https://www.youtube.com/@sceneone-app" 
+                  target="_blank">Youtube</a></li>
                 <li><a href="https://space.bilibili.com/3546720791169733" target="_blank">Bilibili</a></li>
               </ul>
             </div>
@@ -505,6 +522,7 @@
   <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
   <script type="text/javascript" src="assets/js/plugins.js"></script>
   <script type="text/javascript" src="assets/js/custom.js"></script>
+  <script type="text/javascript" src="assets/js/videoplay.js"></script>
 </body>
 
 </html>

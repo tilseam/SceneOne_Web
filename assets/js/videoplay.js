@@ -2,6 +2,7 @@ $(document).ready(function() {
     // 绑定点击事件到document，使用事件代理
     $(document).on('click', '.card-single h1, .card-single h2, .card-single h6, .card-single img, #playVideoLink', function(e) {
       e.preventDefault();
+      console.log('1111');
       openVideo();
     });
     
@@ -17,6 +18,9 @@ $(document).ready(function() {
     setVideoHeight();
     
     function openVideo() {
+      // 打印到控制台
+      console.log('打开视频');
+      // 显示模态框
       $(modal).css('display', 'flex');
       let src = biliPlayer.src;
       if (src.indexOf('autoplay=0') !== -1) {
